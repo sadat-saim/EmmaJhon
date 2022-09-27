@@ -1,0 +1,30 @@
+.cart {
+  padding: 1rem;
+}
+
+.cart p {
+  margin: 0.5rem 0;
+}
+
+.cart button {
+  width: 100%;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #ff3030;
+}
+
+.btn-danger:hover {
+  background-color: #ff3030cd;
+}
+
+.cart-title {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  font-weight: 500;
+}
+
+.txt-l {
+  text-align: left;
+}

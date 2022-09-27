@@ -1,0 +1,43 @@
+.hero-section {
+  display: flex;
+  max-width: 90%;
+  height: calc(100vh - 5rem);
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section img {
+  width: 80%;
+  filter: drop-shadow(-18px 18px 0px #ffe0b3);
+  transition: filter 0.3s ease;
+}
+
+.hero-section img:hover {
+  filter: drop-shadow(-12px 12px 0px #ffe0b3);
+}
+
+small {
+  color: #ff9900;
+}
+
+h1 {
+  color: #1c2b35;
+  font-size: 3.75rem;
+}
+
+button {
+  padding: 0.7rem 2rem;
+  margin: 0.9rem 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-color: #ff9900;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff9900c8;
+  color: #fff;
+}

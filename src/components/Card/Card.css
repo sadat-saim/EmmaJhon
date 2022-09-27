@@ -1,0 +1,34 @@
+.card-container {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-container img {
+  width: 100%;
+}
+
+.card-container img,
+.card-container {
+  border-radius: 0.3rem;
+}
+
+h3 {
+  font-size: 1.32rem;
+  font-weight: normal;
+  margin: 0.5rem 0;
+}
+
+.card-info {
+  color: #2a414f;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+  line-height: 25px;
+}
+
+.card-btn {
+  margin-bottom: 0;
+  width: 100%;
+}
