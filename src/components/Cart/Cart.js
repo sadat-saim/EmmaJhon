@@ -1,19 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Cart.css";
 
 const Cart = (props) => {
-  const { handleAddToCart } = props;
-  const price = props.cartItems.reduce(
-    (acc, cv) => parseFloat(cv.price) + acc,
-    0
-  );
-  const shippingCharge = props.cartItems.length ? 5 : 0;
+  const { handleAddToCart, cartItems, orderPage } = props;
+  const price = cartItems?.reduce((acc, cv) => parseFloat(cv.price) + acc, 0);
+  const shippingCharge = cartItems?.length ? 5 : 0;
   const tax = Math.ceil(price * 0.01);
 
   return (
     <div className="cart">
       <h2 className="cart-title">Order Summary</h2>
-      <p>Selected items: {props.cartItems.length}</p>
+      <p>Selected items: {cartItems?.length}</p>
       <p>Total price: ${price}</p>
       <p>Total shipping charge: ${shippingCharge}</p>
       <p>Tax: ${tax}</p>
@@ -23,7 +21,12 @@ const Cart = (props) => {
       <button className="btn-danger" onClick={() => handleAddToCart()}>
         Clear cart
       </button>
-      <button>Review Order</button>
+      <Link className="btn" to={orderPage ? "/shop" : "/order"}>
+        {orderPage ? "Back To Shop" : "Review Order"}
+      </Link>
+      <Link to="/review" className={orderPage ? "btn btn-success" : "d-none"}>
+        Proceed
+      </Link>
     </div>
   );
 };

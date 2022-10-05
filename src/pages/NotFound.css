@@ -1,0 +1,21 @@
+.container-nf {
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  align-items: center;
+}
+
+.container-nf img {
+  width: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.container-nf h1 {
+  font-size: 3rem;
+}
+.container-nf a {
+  text-decoration: none;
+}

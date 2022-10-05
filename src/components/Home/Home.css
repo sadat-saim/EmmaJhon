@@ -26,7 +26,8 @@ h1 {
   font-size: 3.75rem;
 }
 
-button {
+button,
+.btn {
   padding: 0.7rem 2rem;
   margin: 0.9rem 0;
   cursor: pointer;
@@ -35,9 +36,13 @@ button {
   border: none;
   background-color: #ff9900;
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
 }
 
-button:hover {
+button:hover,
+.btn:hover {
   background-color: #ff9900c8;
   color: #fff;
 }

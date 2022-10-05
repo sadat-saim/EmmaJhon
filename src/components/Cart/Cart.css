@@ -6,9 +6,11 @@
   margin: 0.5rem 0;
 }
 
-.cart button {
+.cart button,
+.cart a {
   width: 100%;
   color: #fff;
+  text-align: center;
 }
 
 .btn-danger {
@@ -19,6 +21,17 @@
   background-color: #ff3030cd;
 }
 
+.btn-success {
+  background-color: #acff30;
+  color: #4a4a4a !important;
+  font-weight: 500;
+}
+
+.btn-success:hover {
+  background-color: #acff30a8;
+  color: #4a4a4a;
+}
+
 .cart-title {
   text-align: center;
   margin: 1rem 0 2rem;
@@ -27,4 +40,13 @@
 
 .txt-l {
   text-align: left;
+}
+
+.order-page {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.d-none {
+  display: none;
 }

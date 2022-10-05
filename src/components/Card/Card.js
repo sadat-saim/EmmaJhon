@@ -1,7 +1,12 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({ handleAddToCart, product }) => {
+const Card = ({
+  handleAddToCart,
+  handleRemoveFromCart,
+  product,
+  isOrderPage,
+}) => {
   const { price, name, img, seller } = product;
   return (
     <div className="card-container" style={img ? {} : { display: "none" }}>
@@ -15,8 +20,15 @@ const Card = ({ handleAddToCart, product }) => {
           <p>Manufacturer: {seller}</p>
           <p>Rating: 3</p>
         </div>
-        <button className="card-btn" onClick={() => handleAddToCart(product)}>
-          Add to Cart
+        <button
+          className="card-btn"
+          onClick={() => {
+            isOrderPage
+              ? handleRemoveFromCart(product)
+              : handleAddToCart(product);
+          }}
+        >
+          {isOrderPage ? "Remove from Cart" : " Add to Cart"}
         </button>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HeroImg from "../../images/hero-img.png";
 import "./Home.css";
 
@@ -9,7 +10,9 @@ const Home = () => {
         <small>Save up to 70% off</small>
         <h1>New Collection For All</h1>
         <p>Discover all the new arrivals of ready-to-wear collection</p>
-        <button>Shop Now</button>
+        <Link className="btn" to="shop">
+          Shop Now
+        </Link>
       </div>
       <div className="hero-img">
         <img src={HeroImg} alt="heroimage" />
